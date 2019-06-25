@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "e62dab26-d640-462e-a24b-937464a586ef",
+		"name": "Get Content Resource",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Content Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "=454686408",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "app_id",
+							"value": "fira_id",
+							"type": "text"
+						},
+						{
+							"key": "doc_type",
+							"value": "policy",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://103.29.149.233/resource_center/api/api_content/getContent",
+					"protocol": "http",
+					"host": [
+						"103",
+						"29",
+						"149",
+						"233"
+					],
+					"path": [
+						"resource_center",
+						"api",
+						"api_content",
+						"getContent"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "50dd4ce9-62c3-47ad-bdcf-903200515d23",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "495da07a-42c8-4cde-ad24-637dc1de8f08",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
